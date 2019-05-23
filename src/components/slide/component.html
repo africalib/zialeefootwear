@@ -1,0 +1,20 @@
+<div class="slide component" v-bind:style="{ height: slideHeight }">
+  <div class="swiper-container" v-if="!mobile">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" v-for="index in limit" v-bind:key="index">
+        <span v-bind:style="{backgroundImage : 'url(/src/pages/' + category + '/img/' + id + '/' + index + '.jpg)'}"
+          v-if="swiper.activeIndex + 1 === index"></span>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+  </div>
+  <div v-else class="enumerate">
+    <div class="container">
+      <div v-for="index in limit" v-bind:key="index">
+        <img v-bind:src="'/src/pages/' + category + '/img/' + id + '/' + index + '.jpg'" />
+      </div>
+    </div>
+  </div>
+</div>

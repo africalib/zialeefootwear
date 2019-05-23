@@ -1,0 +1,29 @@
+<div id="portfolio" class="portfolio page">
+    <div class="container">
+        <h5>
+            <a href="#/portfolio">Portfolio</a>
+        </h5>
+        <hr />
+    </div>
+    <div class="gallery" v-if="!id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" v-for="(p, index) in portfolios" v-bind:key="index">
+                    <a v-bind:href="'#/portfolio/' + (index + 1)">
+                        <span class="wrapper"
+                            v-bind:style="{ 'backgroundImage' : 'url(/src/img/portfolio_' + (index + 1) + '.jpg)' }">
+                            <span class="cover">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <img src="/src/img/rect_empty.png" />
+                        </span>
+                    </a>
+                    <div>{{ p }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div v-else>
+        <component-slide category="portfolio" v-bind:limit="limit"></component-slide>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+.portfolio .container > div {
+  height: 100%;
+}
+
+.portfolio .container > div textarea {
+  min-height: 140px;
+}
+
+.portfolio .container > div.mail {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=page.css.map */

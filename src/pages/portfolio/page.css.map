@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,UAFM,CACR,UAAU,GACN,GAAG,CAAC;EACJ,MAAM,EAAE,IAAI;CASb;;AAZL,AAKM,UALI,CACR,UAAU,GACN,GAAG,CAGH,QAAQ,CAAC;EACP,UAAU,EAAE,KAAK;CAClB;;AAPP,AASM,UATI,CACR,UAAU,GACN,GAAG,AAOF,KAAK,CAAC;EACL,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "page.scss"
+    ],
+    "names": [],
+    "file": "page.css"
+}

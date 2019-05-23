@@ -1,0 +1,30 @@
+<div id="lookbook" class="lookbook page" v-else-if="mode === 'lookbook'">
+    <div class="container">
+        <h5>
+            <a href="#/lookbook">Lookbook</a>
+        </h5>
+        <hr />
+    </div>
+    <div class="gallery" v-if="!id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" v-for="(l, idx) in lookbooks" v-bind:key="idx">
+                    <a v-bind:href="'#/lookbook/' + (idx + 1)">
+                        <span class="wrapper"
+                            v-bind:style="{ 'backgroundImage' : 'url(/src/img/lookbook_' + (idx + 1) + '.jpg)' }">
+                            <span class="cover">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <img src="/src/img/rect_empty.png" />
+                        </span>
+                    </a>
+                    <div>{{ l }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div v-else>
+        <component-slide category="lookbook" v-bind:limit="limit"></component-slide>
+    </div>
+    <div class="slide" v-else></div>
+</div>

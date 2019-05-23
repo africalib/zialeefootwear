@@ -1,0 +1,187 @@
+.main.page {
+  padding-top: 0;
+
+  .area {
+    .title {
+      font-size: 24px;
+      margin: 10px 0 10px 0;
+      font-weight: 600;
+      padding-left: 15px;
+      position: relative;
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+
+    .directions {
+      position: absolute;
+      right: 10px;
+      top: 0;
+
+      i {
+        cursor: pointer;
+        font-size: 30px;
+      }
+    }
+
+    > .gallery {
+      overflow: auto;
+      -webkit-transition: margin 0.75s;
+      transition: margin 0.75s;
+      white-space: nowrap;
+      padding: 10px 10px 70px 10px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+
+        li {
+          display: inline-block;
+          padding: 0 3px;
+          width: 25%;
+
+          a {
+            img {
+              width: 100%;
+
+              &:hover {
+                opacity: 0.75;
+              }
+            }
+          }
+
+          div {
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &.first {
+      height: 1000px;
+      background-position: 90%;
+    }
+
+    &.second {
+      padding: 0 0 20px 0;
+    }
+
+    &.third {
+      .back {
+        height: 840px;
+        background-attachment: fixed;
+        background-image: url(/src/img/third.jpg);
+        background-position: 50% 50%;
+        background-size: auto 100%;
+      }
+
+      .text {
+        padding: 100px 0;
+        text-align: center;
+      }
+    }
+
+    &.fourth {
+      .back {
+        height: 840px;
+        margin: 0 auto;
+        background-image: url(/src/img/fourth.jpg);
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-size: auto 100%;
+      }
+    }
+
+    &.fifth {
+      margin: 170px 0;
+
+      .desc {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &.sixth {
+      .back {
+        height: 840px;
+        margin: 0 auto;
+        background-image: url(/src/img/sixth.jpg);
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-size: auto 100%;
+      }
+    }
+
+    &.seventh {
+      .back {
+        height: 840px;
+        margin: 0 auto;
+        background-image: url(/src/img/seventh.jpg);
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-size: auto 100%;
+      }
+    }
+  }
+
+  .back-to-top {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      margin: 20px 0;
+      color: #333;
+      text-decoration: none;
+
+      span {
+        display: block;
+        margin: 5px 0;
+        font-size: 17px;
+      }
+
+      i {
+        font-size: 30px;
+      }
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main.page .area > .gallery ul li {
+    width: 50% !important;
+
+    a {
+      img {
+        width: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main.page .area.first {
+    background-position: 50% -30px;
+  }
+
+  .back {
+    background-attachment: initial !important;
+  }
+}
+
+.app footer {
+  display: block;
+}

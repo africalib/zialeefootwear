@@ -1,0 +1,13 @@
+.contact.page label {
+  display: block;
+}
+
+.contact.page textarea {
+  min-height: 120px;
+}
+
+.contact.page button {
+  font-size: 15px;
+  background: #474747;
+}
+/*# sourceMappingURL=page.css.map */

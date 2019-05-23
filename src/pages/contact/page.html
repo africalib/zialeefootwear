@@ -1,0 +1,29 @@
+<div id="contact" class="contact page">
+    <div class="container">
+        <h5 class="mb-3">Contact</h5>
+        <hr />
+        <form class="needs-validation" novalidate="">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" class="form-control" name="email" autocomplete="off" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="name"><b>Name</b></label>
+                    <input type="name" class="form-control" name="name" autocomplete="off" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="subject"><b>Subject</b></label>
+                <input type="text" class="form-control" name="subject" autocomplete="off" />
+            </div>
+            <div class="mb-3">
+                <label for="message"><b>Message</b></label>
+                <label for="message" class="float-md-right">All portfolios are available upon request</label>
+                <textarea class="form-control" name="message"></textarea>
+            </div>
+            <button class="btn btn-dark btn-lg btn-block" type="button" v-on:click="sendMail()">Request</button>
+            <input type="hidden" name="token" value="a1903170747" />
+        </form>
+    </div>
+</div>

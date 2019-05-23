@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta na="description" content="ZIA LEE">
+    <meta name="author" content="ZIA LEE">
+    <title>Z;A LEE</title>
+    <link href="src/img/logo.ico" rel="shortcut icon" />
+    <link href="src/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="src/css/swiper.min.css" rel="stylesheet" />
+    <link href="src/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="src/css/common.css" rel="stylesheet" />
+    <link href="src/css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app" class="app" v-bind:data-mode="mode" v-cloak>
+        <nav class="navbar navbar-expand-lg navbar-dark" v-if="mode !== 'index'">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="/">
+                    <img src="/src/img/zialee_logo.png" />
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item" v-for="m in menus" v-bind:class="{ 'active' : m === mode }">
+                            <a class="nav-link js-scroll-trigger" v-bind:href="'#/' + m">{{ m.toUpperCase() }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <page-index v-if="mode === 'index'"></page-index>
+        <page-main v-else-if="mode === 'main'"></page-main>
+        <page-about v-else-if="mode === 'about'"></page-about>
+        <page-portfolio v-else-if="mode === 'portfolio'"></page-portfolio>
+        <page-lookbook v-else-if="mode === 'lookbook'"></page-lookbook>
+        <page-contact v-else-if="mode === 'contact'"></page-contact>
+        <footer class="bg-light">
+            <div class="container">
+                <div class="text-center">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/zialee_footwear/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="copyright">&copy; 2019 Z;A LEE. All RIGHTS RESERVED.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/swiper.min.js"></script>
+    <script src="dist/build.js"></script>
+</body>
+
+</html>

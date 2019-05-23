@@ -1,0 +1,185 @@
+.app {
+  height: 100%;
+  overflow: visible;
+  /*overflow: auto;*/
+  position: relative;
+}
+
+.app .pointer {
+  cursor: pointer;
+}
+
+.app .move {
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #383e46;
+  background-attachment: fixed;
+  position: relative;
+  -webkit-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
+}
+
+.app img {
+  max-width: 100%;
+}
+
+.app .navbar {
+  background: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.app .navbar button {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.app .navbar button:focus, .app .navbar button:hover, .app .navbar button:active {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+.app .navbar button i {
+  color: #fff;
+}
+
+.app .navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 27px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 3px;
+}
+
+.app .navbar .navbar-brand img {
+  height: 55px;
+}
+
+.app .navbar .navbar-nav {
+  padding: 10px;
+}
+
+.app .navbar .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.app .navbar .navbar-nav .nav-item a {
+  font-weight: 500;
+  color: #fff;
+}
+
+.app .navbar .navbar-nav .nav-item.active a {
+  color: #9dccff;
+}
+
+.app .navbar .collapse.in {
+  display: block;
+}
+
+.app .page {
+  padding-top: 100px;
+}
+
+.app .page h5 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.app .page .ready {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.app .page .gallery a {
+  display: block;
+  padding: 5px;
+  position: relative;
+}
+
+.app .page .gallery a > .wrapper {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  width: 100%;
+  background-position: 50% 50%;
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+.app .page .gallery a > .wrapper:hover .cover {
+  display: inline-block;
+}
+
+.app .page .gallery a > .wrapper .cover {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.app .page .gallery a > .wrapper .cover i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.app .page .gallery a > .wrapper img {
+  width: 100%;
+}
+
+.app .page .gallery .row > div {
+  margin-bottom: 15px;
+}
+
+.app .page .gallery .row > div > div {
+  font-size: 16px;
+  margin: 7px 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.app footer {
+  display: none;
+}
+
+.app[v-cloak] {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .app .move {
+    background-size: auto 100%;
+  }
+  .app .page {
+    padding-top: 85px;
+  }
+  .app .navbar .navbar-nav {
+    padding: 10px 0;
+  }
+  .app .navbar .navbar-nav .nav-item {
+    margin: 0;
+  }
+  .app .page.lookbook .gallery ul li > a > img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=app.css.map */

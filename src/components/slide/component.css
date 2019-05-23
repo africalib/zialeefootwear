@@ -1,0 +1,54 @@
+.slide.component {
+  height: 700px;
+}
+
+.slide.component .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slide.component .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slide.component .swiper-slide > span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000;
+  background-position: 50% 50%;
+}
+
+.slide.component .swiper-pagination {
+  padding: 0 20px;
+}
+
+.slide.component .swiper-button-prev,
+.slide.component .swiper-button-next {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .slide.component {
+    height: 300px;
+  }
+  .slide.component .enumerate img {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+/*# sourceMappingURL=component.css.map */

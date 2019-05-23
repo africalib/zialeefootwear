@@ -1,0 +1,88 @@
+<div id="main" class="main page">
+    <div class="first area move"
+        v-bind:style="{ 'backgroundImage' : 'url('+ backImgUrl +')', 'height' : screen.height + 'px' }"></div>
+    <div class="second area">
+        <div class="title">
+            <a href="#/lookbook">LOOKBOOK</a>
+            <div class="directions">
+                <i class="direction fa fa-angle-left left"></i>
+                <i class="direction fa fa-angle-right right"></i>
+            </div>
+        </div>
+        <div class="gallery">
+            <ul>
+                <li v-for="(l, idx) in lookbooks" v-bind:key="idx">
+                    <a v-bind:href="'#/lookbook/' + (idx + 1)">
+                        <span class="wrapper"
+                            v-bind:style="{ 'backgroundImage' : 'url(/src/img/lookbook_' + (idx + 1) + '.jpg)' }">
+                            <span class="cover">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <img src="/src/img/rect_empty.png" />
+                        </span>
+                    </a>
+                    <div>{{ l }}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="third area">
+        <div class="back"></div>
+        <div class="text">
+            <h1>Girl holding gun;</h1>
+        </div>
+    </div>
+    <div class="fourth area">
+        <div class="back"></div>
+    </div>
+    <div class="fifth area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <img src="/src/img/fifth_1.jpg" />
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <!-- <div class="desc">description</div> -->
+                    <img src="/src/img/fifth_2.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sixth area">
+        <div class="back"></div>
+        <div class="title">
+            <a href="#/portfolio">PORTFOLIO</a>
+            <div class="directions">
+                <i class="direction fa fa-angle-left left"></i>
+                <i class="direction fa fa-angle-right right"></i>
+            </div>
+        </div>
+        <div class="gallery">
+            <ul>
+                <li v-for="(p, index) in portfolios" v-bind:key="index">
+                    <a v-bind:href="'#/portfolio/' + (index + 1)">
+                        <span class="wrapper"
+                            v-bind:style="{ 'backgroundImage' : 'url(/src/img/portfolio_' + (index + 1) + '.jpg)' }">
+                            <span class="cover">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <img src="/src/img/rect_empty.png" />
+                        </span>
+                    </a>
+                    <div>{{ p }}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="seventh area">
+        <div class="back"></div>
+    </div>
+    <div class="back-to-top">
+        <a class="pointer" v-on:click="backToTop()">
+            <span>back to top</span>
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.portfolio {
+  .container {
+    > div {
+      height: 100%;
+
+      textarea {
+        min-height: 140px;
+      }
+
+      &.mail {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
