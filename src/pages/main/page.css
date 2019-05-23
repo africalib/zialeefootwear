@@ -89,7 +89,6 @@
 .main.page .area.fourth .back {
   height: 840px;
   margin: 0 auto;
-  background-image: url(../../img/fourth.jpg);
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: auto 100%;
@@ -107,7 +106,6 @@
 .main.page .area.sixth .back {
   height: 840px;
   margin: 0 auto;
-  background-image: url(../../img/sixth.jpg);
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: auto 100%;
@@ -116,7 +114,6 @@
 .main.page .area.seventh .back {
   height: 840px;
   margin: 0 auto;
-  background-image: url(../../img/seventh.jpg);
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: auto 100%;

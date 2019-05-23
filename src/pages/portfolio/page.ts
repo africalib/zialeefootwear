@@ -10,7 +10,7 @@ Vue.component('page-portfolio', {
             id: 0,
             limit: 0,
             global: new Global(),
-            portfolios: ['ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE']
+            portfolios: ['FITFOP X Z;A LEE', 'ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE']
         }
     },
     methods: {

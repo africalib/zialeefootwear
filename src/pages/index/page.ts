@@ -6,7 +6,7 @@ Vue.component('page-index', {
     template: template,
     data: function () {
         return {
-            backImgUrl: 'src/img/main_1.jpg',
+            backImgUrl: './src/pages/main/img/main_1.jpg',
             backImages: ['main_1.jpg', 'main_2.jpg', 'main_3.jpg', 'main_4.jpg'],
             lookbooks: ['1 ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE', 'CLUMZY DAYZ', 'RIPTIDE;PANIC ATTACK', 'MY SECOND SKIN(SKIN ON SKIN)'],
             screen: {

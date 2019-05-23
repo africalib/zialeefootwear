@@ -17,7 +17,6 @@ Vue.component('page-lookbook', {
         watch: function () {
             let hash = this.global.lib.getHash();
             this.id = hash.id;
-            console.log(this.id)
 
             switch (this.id) {
                 case 1:
