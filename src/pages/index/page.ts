@@ -8,11 +8,6 @@ Vue.component('page-index', {
         return {
             backImgUrl: './src/pages/main/img/main_1.jpg',
             backImages: ['main_1.jpg', 'main_2.jpg', 'main_3.jpg', 'main_4.jpg'],
-            lookbooks: ['1 ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE', 'CLUMZY DAYZ', 'RIPTIDE;PANIC ATTACK', 'MY SECOND SKIN(SKIN ON SKIN)'],
-            screen: {
-                width: 0,
-                height: 0
-            }
         }
     },
     mounted: function () {
@@ -20,11 +15,8 @@ Vue.component('page-index', {
         let t = this;
         let idx = 1;
 
-        this.$set(this.screen, 'width', window.outerWidth);
-        this.$set(this.screen, 'height', window.outerHeight);
-
         setInterval(function () {
-            t.backImgUrl = 'src/img/' + t.backImages[idx];
+            t.backImgUrl = './src/pages/main/img/' + t.backImages[idx];
 
             if (idx >= t.backImages.length - 1)
                 idx = 0;
