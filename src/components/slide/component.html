@@ -2,7 +2,7 @@
   <div class="swiper-container" v-if="!mobile">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="index in limit" v-bind:key="index">
-        <span v-bind:style="{backgroundImage : 'url(/src/pages/' + category + '/img/' + id + '/' + index + '.jpg)'}"
+        <span v-bind:style="{backgroundImage : 'url(./src/pages/' + category + '/img/' + id + '/' + index + '.jpg)'}"
           v-if="swiper.activeIndex + 1 === index"></span>
       </div>
     </div>
@@ -13,7 +13,7 @@
   <div v-else class="enumerate">
     <div class="container">
       <div v-for="index in limit" v-bind:key="index">
-        <img v-bind:src="'/src/pages/' + category + '/img/' + id + '/' + index + '.jpg'" />
+        <img v-bind:src="'./src/pages/' + category + '/img/' + id + '/' + index + '.jpg'" />
       </div>
     </div>
   </div>

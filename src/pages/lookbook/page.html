@@ -11,11 +11,11 @@
                 <div class="col-md-4" v-for="(l, idx) in lookbooks" v-bind:key="idx">
                     <a v-bind:href="'#/lookbook/' + (idx + 1)">
                         <span class="wrapper"
-                            v-bind:style="{ 'backgroundImage' : 'url(/src/img/lookbook_' + (idx + 1) + '.jpg)' }">
+                            v-bind:style="{ 'backgroundImage' : 'url(./src/img/lookbook_' + (idx + 1) + '.jpg)' }">
                             <span class="cover">
                                 <i class="fa fa-search"></i>
                             </span>
-                            <img src="/src/img/rect_empty.png" />
+                            <img v-bind:src="'./src/img/rect_empty.png'" />
                         </span>
                     </a>
                     <div>{{ l }}</div>
