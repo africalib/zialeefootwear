@@ -14,11 +14,11 @@
                 <li v-for="(l, idx) in lookbooks" v-bind:key="idx">
                     <a v-bind:href="'#/lookbook/' + (idx + 1)">
                         <span class="wrapper"
-                            v-bind:style="{ 'backgroundImage' : 'url(/src/img/lookbook_' + (idx + 1) + '.jpg)' }">
+                            v-bind:style="{ 'backgroundImage' : 'url(../../img/lookbook_' + (idx + 1) + '.jpg)' }">
                             <span class="cover">
                                 <i class="fa fa-search"></i>
                             </span>
-                            <img src="/src/img/rect_empty.png" />
+                            <img src="../../img/rect_empty.png" />
                         </span>
                     </a>
                     <div>{{ l }}</div>
@@ -40,12 +40,12 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-4">
-                    <img src="/src/img/fifth_1.jpg" />
+                    <img src="../../img/fifth_1.jpg" />
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
                     <!-- <div class="desc">description</div> -->
-                    <img src="/src/img/fifth_2.jpg" />
+                    <img src="../../img/fifth_2.jpg" />
                 </div>
             </div>
         </div>
@@ -64,11 +64,11 @@
                 <li v-for="(p, index) in portfolios" v-bind:key="index">
                     <a v-bind:href="'#/portfolio/' + (index + 1)">
                         <span class="wrapper"
-                            v-bind:style="{ 'backgroundImage' : 'url(/src/img/portfolio_' + (index + 1) + '.jpg)' }">
+                            v-bind:style="{ 'backgroundImage' : 'url(../../img/portfolio_' + (index + 1) + '.jpg)' }">
                             <span class="cover">
                                 <i class="fa fa-search"></i>
                             </span>
-                            <img src="/src/img/rect_empty.png" />
+                            <img src="../../img/rect_empty.png" />
                         </span>
                     </a>
                     <div>{{ p }}</div>
