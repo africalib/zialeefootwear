@@ -20,7 +20,7 @@ Vue.component('page-lookbook', {
 
             switch (this.id) {
                 case 1:
-                    this.limit = 16;
+                    this.limit = 10;
                     break;
 
                 case 2:

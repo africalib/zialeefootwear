@@ -20,14 +20,18 @@ Vue.component('page-portfolio', {
 
             switch (this.id) {
                 case 1:
-                    this.limit = 25;
+                    this.limit = 16;
                     break;
 
                 case 2:
-                    this.limit = 13;
+                    this.limit = 25;
                     break;
 
                 case 3:
+                    this.limit = 13;
+                    break;
+
+                case 4:
                     this.limit = 16;
                     break;
             }
