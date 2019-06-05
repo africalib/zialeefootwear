@@ -13,10 +13,13 @@ Vue.component('page-contact', {
                     type: 'POST',
                     data: args,
                     success: function (res: string) {
-                        if (res === 'success')
+                        if (res === 'success') {
                             window.alert('email has been sent.');
-                        else
+                            window.location.reload();
+                        }
+                        else {
                             window.alert('fail');
+                        }
                     },
                     fail: function () {
                         window.alert('fail');
