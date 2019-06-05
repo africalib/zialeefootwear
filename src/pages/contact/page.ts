@@ -6,17 +6,15 @@ Vue.component('page-contact', {
     template: template,
     methods: {
         sendMail: function () {
-            alert('Coming Soon!');
-            return;
-
             if (confirm('send email?')) {
                 let args = $(this.$el).find('form').serialize();
                 $.ajax({
-                    url: './api/',
+                    url: 'http://africalibrary21.cafe24.com/api/ziaLeeMail.php',
+                    type: 'POST',
                     data: args,
                     success: function (res: string) {
-                        if (res === '1')
-                            window.alert('success');
+                        if (res === 'success')
+                            window.alert('email has been sent.');
                         else
                             window.alert('fail');
                     },
