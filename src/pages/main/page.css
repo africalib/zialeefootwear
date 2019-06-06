@@ -48,7 +48,7 @@
 .main.page .area > .gallery ul li {
   display: inline-block;
   padding: 0 3px;
-  width: 25%;
+  width: 20%;
 }
 
 .main.page .area > .gallery ul li a img {
@@ -67,7 +67,7 @@
 
 .main.page .area.first {
   height: 1000px;
-  background-position: 90%;
+  background-position: 0 -110px;
 }
 
 .main.page .area.second {
