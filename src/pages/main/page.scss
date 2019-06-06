@@ -69,7 +69,16 @@
 
     &.first {
       height: 1000px;
-      background-position: 0 -110px;
+      background-position: 50% 50%;
+      transition: all 0.5s;
+
+      &[idx="0"] {
+        background-position: 50% 150%;
+      }
+
+      &[idx="1"] {
+        background-position: 50% 140%;
+      }
     }
 
     &.second {
@@ -170,7 +179,19 @@
 
 @media (max-width: 768px) {
   .main.page .area.first {
-    background-position: 50% -30px;
+    background-position: 50% 0;
+
+    &[idx="0"] {
+      background-position: 45% -100px;
+    }
+  
+    &[idx="1"] {
+      background-position: 54% -110px;
+    }
+  
+    &[idx="3"] {
+      background-position: 60% 0;
+    }
   }
 
   .back {

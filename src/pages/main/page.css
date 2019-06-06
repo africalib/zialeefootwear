@@ -67,7 +67,17 @@
 
 .main.page .area.first {
   height: 1000px;
-  background-position: 0 -110px;
+  background-position: 50% 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main.page .area.first[idx="0"] {
+  background-position: 50% 150%;
+}
+
+.main.page .area.first[idx="1"] {
+  background-position: 50% 140%;
 }
 
 .main.page .area.second {
@@ -155,7 +165,16 @@
 
 @media (max-width: 768px) {
   .main.page .area.first {
-    background-position: 50% -30px;
+    background-position: 50% 0;
+  }
+  .main.page .area.first[idx="0"] {
+    background-position: 45% -100px;
+  }
+  .main.page .area.first[idx="1"] {
+    background-position: 54% -110px;
+  }
+  .main.page .area.first[idx="3"] {
+    background-position: 60% 0;
   }
   .back {
     background-attachment: initial !important;

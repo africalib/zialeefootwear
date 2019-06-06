@@ -2,7 +2,8 @@
   height: 100%;
   padding-top: 0;
   background-size: 100% auto;
-  background-position: 90%;
+  background-position: 50% 50%;
+  transition: all 0.5s;
 
   .intro-text {
     padding-top: 150px;
@@ -39,14 +40,38 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
   }
+
+  &[idx="0"] {
+    background-position: 50% 80%;
+  }
+
+  &[idx="1"] {
+    background-position: 50% 90%;
+  }
+
+  &[idx="3"] {
+    background-position: 50% 10%;
+  }
 }
 
 @media (max-width: 768px) {
   .index.page {
     background-size: auto 100%;
-    background-position: 50%;
-  }
+    background-position: 50% 0;
+
+    &[idx="0"] {
+      background-position: 45% 0;
+    }
   
+    &[idx="1"] {
+      background-position: 54% 0;
+    }
+  
+    &[idx="3"] {
+      background-position: 60% 0;
+    }
+  }
+
   .intro-text {
     .intro-heading img {
       height: 90px;
