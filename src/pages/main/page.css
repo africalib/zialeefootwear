@@ -68,8 +68,6 @@
 .main.page .area.first {
   height: 1000px;
   background-position: 50% 50%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .main.page .area.first[idx="0"] {
