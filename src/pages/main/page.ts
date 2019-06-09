@@ -28,7 +28,7 @@ Vue.component('page-main', {
         let t = this;
 
         this.$set(this.screen, 'width', window.innerHeight);
-        this.$set(this.screen, 'height', window.innerHeight * 0.85);
+        this.$set(this.screen, 'height', window.innerHeight * 0.9);
 
         setInterval(function () {
             if (t.idx >= t.backImages.length - 1)
