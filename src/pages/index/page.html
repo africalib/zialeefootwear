@@ -1,5 +1,4 @@
-<div class="index page move" v-bind:idx="idx"
-    v-bind:style="{ 'backgroundImage' : 'url('+ backImgUrl +')' }">
+<div class="index page move" v-bind:idx="idx" v-bind:style="{ 'backgroundImage' : 'url('+ backImgUrl +')' }">
     <div class="container">
         <div class="intro-text">
             <div class="intro-heading text-uppercase">
@@ -12,4 +11,5 @@
             </div>
         </div>
     </div>
+    <img v-bind:src="'/src/pages/main/img/' + b" class="d-none" v-for="b in backImages" />
 </div>
