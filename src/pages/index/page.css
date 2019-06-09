@@ -1,7 +1,7 @@
 .index.page {
   height: 100%;
   padding-top: 0;
-  background-size: 100% auto;
+  /*background-size: 100% auto;*/
   background-position: 50% 50%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -55,7 +55,7 @@
 
 @media (max-width: 768px) {
   .index.page {
-    background-size: auto 100%;
+    /*background-size: auto 100%;*/
     background-position: 50% 0;
   }
   .index.page[idx="0"] {
