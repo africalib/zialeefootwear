@@ -12,7 +12,7 @@
   color: white;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto 100%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #383e46;
   background-attachment: scroll;
@@ -26,7 +26,6 @@
   left: 0;
   height: 100%;
   width: 100%;
-  max-height: 1000px;
 }
 
 .app .move[idx="0"] {
@@ -184,6 +183,7 @@
     background-size: auto 100%;
     background-position: top center;
     max-width: 420px;
+    max-height: 1000px;
   }
   .app .move[idx="0"] {
     background-position: 45% 0;
