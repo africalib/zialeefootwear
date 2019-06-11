@@ -1,7 +1,4 @@
 .app {
-  height: 100%;
-  overflow: visible;
-  /*overflow: auto;*/
   position: relative;
 }
 
@@ -22,6 +19,27 @@
   position: relative;
   -webkit-transition: background-image 1s, background-position 1s;
   transition: background-image 1s, background-position 1s;
+  background-position: 50% 50%;
+  padding-top: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app .move[idx="0"] {
+  background-position: 50% 80%;
+}
+
+.app .move[idx="1"] {
+  background-position: 50% 90%;
+}
+
+.app .move[idx="3"] {
+  background-position: 50% 10%;
 }
 
 .app img {
@@ -86,10 +104,6 @@
 
 .app .navbar .collapse.in {
   display: block;
-}
-
-.app .page {
-  padding-top: 100px;
 }
 
 .app .page h5 a {
@@ -159,6 +173,7 @@
 
 .app footer {
   display: none;
+  position: relative;
 }
 
 .app[v-cloak] {
@@ -166,13 +181,18 @@
 }
 
 @media (max-width: 767px) {
-  .app {
-    /*.move {
-      background-size: auto 100%;
-    }*/
+  .app .move {
+    background-size: auto 100%;
+    background-position: 50% 0;
   }
-  .app .page {
-    padding-top: 85px;
+  .app .move[idx="0"] {
+    background-position: 45% 0;
+  }
+  .app .move[idx="1"] {
+    background-position: 54% 0;
+  }
+  .app .move[idx="3"] {
+    background-position: 60% 0;
   }
   .app .navbar .navbar-nav {
     padding: 10px 0;

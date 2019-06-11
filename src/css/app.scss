@@ -1,7 +1,4 @@
 .app {
-  height: 100%;
-  overflow: visible;
-  /*overflow: auto;*/
   position: relative;
 
   .pointer {
@@ -21,6 +18,26 @@
     position: relative;
     -webkit-transition: background-image 1s, background-position 1s;
     transition: background-image 1s, background-position 1s;
+    background-position: 50% 50%;
+    padding-top: 0;
+    transition: all 0.5s;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    &[idx="0"] {
+      background-position: 50% 80%;
+    }
+
+    &[idx="1"] {
+      background-position: 50% 90%;
+    }
+
+    &[idx="3"] {
+      background-position: 50% 10%;
+    }
   }
 
   img {
@@ -90,8 +107,6 @@
   }
 
   .page {
-    padding-top: 100px;
-
     h5 {
       a {
         color: #333;
@@ -168,6 +183,7 @@
 
   footer {
     display: none;
+    position: relative;
   }
 
   &[v-cloak] {
@@ -177,12 +193,24 @@
 
 @media (max-width: 767px) {
   .app {
-    /*.move {
+    .move {
       background-size: auto 100%;
-    }*/
+      background-position: 50% 0;
+
+      &[idx="0"] {
+        background-position: 45% 0;
+      }
+
+      &[idx="1"] {
+        background-position: 54% 0;
+      }
+
+      &[idx="3"] {
+        background-position: 60% 0;
+      }
+    }
 
     .page {
-      padding-top: 85px;
     }
 
     .navbar .navbar-nav {

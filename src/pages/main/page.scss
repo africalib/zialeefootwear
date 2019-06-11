@@ -1,12 +1,12 @@
 .main.page {
-  padding-top: 0;
-
   .area {
+    position: relative;
+    background-color: #fff;
+
     .title {
       font-size: 24px;
-      margin: 10px 0 10px 0;
       font-weight: 600;
-      padding-left: 15px;
+      padding: 10px 15px 0 15px;
       position: relative;
 
       a {
@@ -17,8 +17,8 @@
 
     .directions {
       position: absolute;
-      right: 10px;
-      top: 0;
+      right: 15px;
+      top: 10px;
 
       i {
         cursor: pointer;
@@ -64,19 +64,6 @@
             text-align: center;
           }
         }
-      }
-    }
-
-    &.first {
-      height: 1000px;
-      background-position: 50% 50%;
-
-      &[idx="0"] {
-        background-position: 50% 120%;
-      }
-
-      &[idx="1"] {
-        background-position: 50% 120%;
       }
     }
 
@@ -140,6 +127,8 @@
 
   .back-to-top {
     text-align: center;
+    position: relative;
+    background: #fff;
 
     a {
       display: inline-block;
@@ -177,22 +166,6 @@
 }
 
 @media (max-width: 768px) {
-  .main.page .area.first {
-    background-position: 50% 0;
-
-    &[idx="0"] {
-      background-position: 45% 0;
-    }
-  
-    &[idx="1"] {
-      background-position: 54% 0;
-    }
-  
-    &[idx="3"] {
-      background-position: 60% 0;
-    }
-  }
-
   .back {
     background-attachment: initial !important;
   }
