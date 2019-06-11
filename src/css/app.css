@@ -1,5 +1,6 @@
 .app {
   position: relative;
+  padding-top: 90px;
 }
 
 .app .pointer {
@@ -10,15 +11,12 @@
   text-align: center;
   color: white;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: top center;
-  background-size: cover;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-color: #383e46;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: relative;
-  -webkit-transition: background-image 1s, background-position 1s;
-  transition: background-image 1s, background-position 1s;
   background-position: 50% 50%;
   padding-top: 0;
   -webkit-transition: all 0.5s;
@@ -28,18 +26,18 @@
   left: 0;
   height: 100%;
   width: 100%;
-}
+  /*
+    &[idx="0"] {
+      background-position: 50% 80%;
+    }
 
-.app .move[idx="0"] {
-  background-position: 50% 80%;
-}
+    &[idx="1"] {
+      background-position: 50% 90%;
+    }
 
-.app .move[idx="1"] {
-  background-position: 50% 90%;
-}
-
-.app .move[idx="3"] {
-  background-position: 50% 10%;
+    &[idx="3"] {
+      background-position: 50% 10%;
+    }*/
 }
 
 .app img {
@@ -183,16 +181,21 @@
 @media (max-width: 767px) {
   .app .move {
     background-size: auto 100%;
-    background-position: 50% 0;
-  }
-  .app .move[idx="0"] {
-    background-position: 45% 0;
-  }
-  .app .move[idx="1"] {
-    background-position: 54% 0;
-  }
-  .app .move[idx="3"] {
-    background-position: 60% 0;
+    background-position: top center;
+    max-width: 420px;
+    /*
+      &[idx="0"] {
+        background-position: 45% 0;
+      }
+
+      &[idx="1"] {
+        background-position: 54% 0;
+      }
+
+      &[idx="3"] {
+        background-position: 60% 0;
+      }
+      */
   }
   .app .navbar .navbar-nav {
     padding: 10px 0;

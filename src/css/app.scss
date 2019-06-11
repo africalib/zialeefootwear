@@ -1,5 +1,6 @@
 .app {
   position: relative;
+  padding-top: 90px;
 
   .pointer {
     cursor: pointer;
@@ -9,17 +10,15 @@
     text-align: center;
     color: white;
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-position: top center;
-    background-size: cover;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-color: #383e46;
-    background-attachment: fixed;
+    background-attachment: scroll;
     position: relative;
-    -webkit-transition: background-image 1s, background-position 1s;
-    transition: background-image 1s, background-position 1s;
     background-position: 50% 50%;
     padding-top: 0;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     position: fixed !important;
     top: 0;
@@ -27,6 +26,7 @@
     height: 100%;
     width: 100%;
 
+    /*
     &[idx="0"] {
       background-position: 50% 80%;
     }
@@ -37,7 +37,7 @@
 
     &[idx="3"] {
       background-position: 50% 10%;
-    }
+    }*/
   }
 
   img {
@@ -195,8 +195,10 @@
   .app {
     .move {
       background-size: auto 100%;
-      background-position: 50% 0;
+      background-position: top center;
+      max-width: 420px;
 
+      /*
       &[idx="0"] {
         background-position: 45% 0;
       }
@@ -208,6 +210,7 @@
       &[idx="3"] {
         background-position: 60% 0;
       }
+      */
     }
 
     .page {

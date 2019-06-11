@@ -90,12 +90,12 @@
 }
 
 .main.page .area.fifth {
-  margin: 170px 0;
+  padding: 170px 0;
 }
 
 .main.page .area.fifth .desc {
   font-size: 24px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .main.page .area.sixth .back {
