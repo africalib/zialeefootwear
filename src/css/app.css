@@ -29,15 +29,11 @@
 }
 
 .app .move[idx="0"] {
-  background-position: 50% 80%;
+  background-position: 50% 60%;
 }
 
 .app .move[idx="1"] {
-  background-position: 50% 90%;
-}
-
-.app .move[idx="3"] {
-  background-position: 50% 10%;
+  background-position: 50% 60%;
 }
 
 .app img {
