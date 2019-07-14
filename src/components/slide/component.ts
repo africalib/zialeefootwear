@@ -21,11 +21,11 @@ Vue.component('component-slide', {
         let g = new Global();
         let hash = g.lib.getHash();
         this.id = hash.id;
-        this.slideHeight = document.body.clientHeight + 'px';
         this.mobile = window.innerWidth < 768;
     },
     mounted: function () {
         let style = document.createElement('style');
+        this.slideHeight = window.innerHeight + 'px';
         this.swiper = new Swiper('.swiper-container', {
             pagination: {
                 el: '.swiper-pagination',
