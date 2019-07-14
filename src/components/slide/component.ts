@@ -25,7 +25,7 @@ Vue.component('component-slide', {
     },
     mounted: function () {
         let style = document.createElement('style');
-        this.slideHeight = window.innerHeight + 'px';
+        this.slideHeight = (window.innerHeight - 150) + 'px';
         this.swiper = new Swiper('.swiper-container', {
             pagination: {
                 el: '.swiper-pagination',
