@@ -10,7 +10,7 @@ Vue.component('page-portfolio', {
             id: 0,
             limit: 0,
             global: new Global(),
-            portfolios: ['FITFOP X Z;A LEE', 'ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE']
+            portfolios: ['HUGO BOSS', 'FITFOP X Z;A LEE', 'ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE']
         }
     },
     methods: {
@@ -20,18 +20,22 @@ Vue.component('page-portfolio', {
 
             switch (this.id) {
                 case 1:
-                    this.limit = 16;
+                    this.limit = 26;
                     break;
 
                 case 2:
-                    this.limit = 25;
+                    this.limit = 16;
                     break;
 
                 case 3:
-                    this.limit = 13;
+                    this.limit = 25;
                     break;
 
                 case 4:
+                    this.limit = 13;
+                    break;
+
+                case 5:
                     this.limit = 16;
                     break;
             }

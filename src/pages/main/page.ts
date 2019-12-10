@@ -10,7 +10,7 @@ Vue.component('page-main', {
             backImgUrl: './src/pages/main/img/main_1.jpg',
             backImages: ['main_1.jpg', 'main_2.jpg', 'main_3.jpg', 'main_4.jpg'],
             lookbooks: ['ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE', 'CLUMZY DAYZ', 'RIPTIDE;PANIC ATTACK', 'MY SECOND SKIN'],
-            portfolios: ['FITFOP X Z;A LEE', 'ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE'],
+            portfolios: ['HUGO BOSS', 'FITFOP X Z;A LEE', 'ZARA x Z;A LEE', 'GIRL HOLDING GUN', 'YOHO! X Z;A LEE'],
             screen: {
                 width: 0,
                 height: 0
